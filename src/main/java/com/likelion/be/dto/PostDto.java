@@ -16,6 +16,7 @@ public class PostDto {
     private String content;
     private LocalDateTime postDate;
 
+    // Post 엔티티를 PostDto로 변환하는 메서드
     public static PostDto from(Post post) {
         PostDto postDto = new PostDto();
         postDto.setId(post.getId());

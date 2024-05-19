@@ -14,7 +14,7 @@ public class MemberDto {
     private String email;
     private LocalDateTime registerDate;
 
-
+    // Member 엔티티를 MemberDto로 변환하는 메서드
     public static MemberDto from(Member member) {
         MemberDto memberDto = new MemberDto();
         memberDto.setId(member.getId());
