@@ -55,7 +55,7 @@ public class PostService {
             }
             return postRepository.save(post); // 게시물 저장
         } else {
-            throw new RuntimeException("Post not found with id " + id); // 게시물 미존재 예외 발생
+            throw new RuntimeException("Not Found"); // 게시물 미존재 예외 발생
         }
     }
 }

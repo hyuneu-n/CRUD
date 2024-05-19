@@ -51,7 +51,7 @@ public class MemberService {
             }
             return memberRepository.save(member); // 회원 정보 저장
         } else {
-            throw new RuntimeException("Member not found with id " + id); // 회원 미존재 예외 발생
+            throw new RuntimeException("Not Found"); // 회원 미존재 예외 발생
         }
     }
 }
